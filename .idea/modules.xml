@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/first-case-sber.iml" filepath="$PROJECT_DIR$/.idea/first-case-sber.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../first-case-sber/.idea/first-case-sber.iml" filepath="$PROJECT_DIR$/../first-case-sber/.idea/first-case-sber.iml" />
     </modules>
   </component>
 </project>
