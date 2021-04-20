@@ -28,6 +28,7 @@
     "@babel/preset-env": "7.10.1",
     "@babel/preset-react": "7.10.1",
     "@material-ui/lab": "*",
+    "clsx": "^1.1.1",
     "eslint-config-prettier": "6.11.0",
     "eslint-plugin-prettier": "3.1.3",
     "eslint-plugin-react": "7.20.0",
@@ -36,6 +37,7 @@
     "prettier": "2.0.5",
     "random-material-color": "^1.0.5",
     "react-helmet": "^6.1.0",
+    "uuid": "^3.4.0",
     "yup": "^0.32.9"
   },
   "optionalDependencies": {

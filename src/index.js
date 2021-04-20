@@ -12,6 +12,8 @@ import ProfilePage from "views/ProfilePage/ProfilePage.js";
 import LoginPage from "views/LoginPage/LoginPage.js";
 import Register from "./views/Register/Register";
 import Login from "./views/Login/Login";
+import EditProfile from "./views/EditProfile/EditProfile";
+import Orders from "./views/Orders/Orders";
 
 var hist = createBrowserHistory();
 
@@ -20,6 +22,8 @@ ReactDOM.render(
         <Switch>
             <Route path="/components" component={Components}/>
             <Route path="/profile" component={ProfilePage}/>
+            <Route path="/orders" component={Orders}/>
+            <Route path="/edit-profile" component={EditProfile}/>
             <Route path="/login-page" component={LoginPage}/>
             <Route path="/register" component={Register}/>
             <Route path="/login" component={Login}/>

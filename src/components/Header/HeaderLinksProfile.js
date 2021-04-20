@@ -11,7 +11,7 @@ import Email from "@material-ui/icons/Email";
 // core components
 import CustomDropdown from "components/CustomDropdown/CustomDropdown.js";
 import Button from "components/CustomButtons/Button.js";
-import profileImage from "assets/img/faces/avatar.jpg";
+import profileImage from "assets/img/faces/christian.jpg";
 
 import styles from "assets/jss/material-kit-react/views/componentsSections/navbarsStyle.js";
 
@@ -28,7 +28,7 @@ export default function HeaderLinksProfile(props) {
                     onClick={e => e.preventDefault()}
                     color="transparent"
                 >
-                    отклики
+                    Предложка
                 </Button>
             </ListItem>
             <ListItem className={classes.listItem}>
@@ -38,7 +38,7 @@ export default function HeaderLinksProfile(props) {
                     onClick={e => e.preventDefault()}
                     color="transparent"
                 >
-                    Мои задачи
+                    Ваш заказ
                 </Button>
             </ListItem>
             <ListItem className={classes.listItem}>
@@ -57,7 +57,7 @@ export default function HeaderLinksProfile(props) {
                     left
                     caret={false}
                     hoverColor="black"
-                    dropdownHeader="Dropdown Header"
+                    dropdownHeader="Пупкин Иван"
                     buttonText={
                         <img
                             src={profileImage}
@@ -71,9 +71,9 @@ export default function HeaderLinksProfile(props) {
                         color: "transparent"
                     }}
                     dropdownList={[
-                        "Me",
-                        "Settings and other stuff",
-                        "Sign out"
+                        "Мой профиль",
+                        "Ред. профиль",
+                        "Выйти"
                     ]}
                 />
             </ListItem>
