@@ -7,7 +7,7 @@ import ProfileAboutOrder from "../ProfileAboutOrder/ProfileAboutOrder";
 import Button from "../CustomButtons/Button";
 import {ListItem} from "@material-ui/core";
 import classNames from "classnames";
-import OfferActionBtns from "../OfferActionBtns/OfferActionBtns";
+import OfferActions from "../OfferActions/OfferActions";
 
 const dashboardRoutes = [];
 const useStyles = makeStyles(styles);
@@ -24,7 +24,7 @@ export default function ExecutorItem(props) {
 
             <ProfileAboutOrder/>
 
-            <OfferActionBtns/>
+            <OfferActions/>
         </div>
     );
 }

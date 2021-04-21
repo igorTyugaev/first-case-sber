@@ -1,5 +1,5 @@
 
-const offerActionBtnsStyle = {
+const offerActionsStyle = {
     main: {
         width: "100%",
         display: "flex",
@@ -21,4 +21,4 @@ const offerActionBtnsStyle = {
     },
 };
 
-export default offerActionBtnsStyle;
+export default offerActionsStyle;
