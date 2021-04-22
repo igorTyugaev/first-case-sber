@@ -1,8 +1,7 @@
 import React from "react";
 // @material-ui/core components
 import {makeStyles} from "@material-ui/core/styles";
-import InputLabel from "@material-ui/core/InputLabel";
-import styles from "assets/jss/material-kit-react/views/editProfile.js";
+import styles from "assets/jss/material-kit-react/views/executors.js";
 // core components
 import GridItem from "components/Grid/GridItem.js";
 import Card from "components/Card/Card.js";
@@ -19,10 +18,11 @@ import {
     ListItemAvatar,
     ListItemText
 } from '@material-ui/core';
-import MoreVertIcon from '@material-ui/icons/MoreVert';
 import profile from "../../assets/img/faces/christian.jpg";
-import RecipeReviewCard from "../RecipeReviewCard/RecipeReviewCard";
 import Button from "../CustomButtons/Button";
+import CardProfileOrder from "../CardProfileOrder/CardProfileOrder";
+import ProfileAboutOrder from "../ProfileAboutOrder/ProfileAboutOrder";
+import ExecutorItem from "../ExecutorItem/ExecutorItem";
 
 const products = [
     {
@@ -65,41 +65,25 @@ const dashboardRoutes = [];
 const useStyles = makeStyles(styles);
 
 
-export default function LatestProducts(props) {
+export default function Executors(props) {
     const classes = useStyles();
     const {...rest} = props;
 
     return (
-        <GridItem xs={12} sm={12} md={8} className={classNames(classes.inner)}>
+        <GridItem xs={12} sm={12} md={10} lg={8} className={classNames(classes.inner)}>
             <Card>
                 <CardHeader color="success">
-                    <h4 className={classes.cardTitleWhite}>Заказы</h4>
-                    <p className={classes.cardCategoryWhite}>Выберите понравившийся заказ</p>
+                    <h4 className={classes.cardTitleWhite}>Наставники, готовые выполнить ваш заказ</h4>
+                    <p className={classes.cardCategoryWhite}>
+                        Выберите подходящего для вас наставника и нажмите "ОТКЛИКНУТЬСЯ"
+                    </p>
                 </CardHeader>
                 <List>
                     {products.map((product, i) => (
                         <ListItem
                             divider={i < products.length - 1}
                             key={product.id}>
-
-                            {/*<ListItemAvatar>*/}
-                            {/*    <img*/}
-                            {/*        alt={product.name}*/}
-                            {/*        // src={product.imageUrl}*/}
-                            {/*        src={profile}*/}
-                            {/*        style={{*/}
-                            {/*            height: 48,*/}
-                            {/*            width: 48*/}
-                            {/*        }}*/}
-                            {/*    />*/}
-                            {/*</ListItemAvatar>*/}
-
-                            <ListItemText
-                                primary={product.name}
-                                // secondary={`Updated ${product.updatedAt.fromNow()}`}
-                                secondary={product.updatedAt}
-                            />
-                            <Button color="success">Откликнуться</Button>
+                            <ExecutorItem/>
                         </ListItem>
                     ))}
                 </List>

@@ -1,11 +1,13 @@
 import imagesStyle from "assets/jss/material-kit-react/imagesStyles.js";
+import {title} from "../../material-kit-react";
 
 const userCardStyle = {
     body: {
-        flex: "1",
         display: "flex",
         flexDirection: "column",
         alignItems: "flex-start",
+        justifyContent: "space-between",
+        width: "100%",
     },
 
     profile: {
@@ -13,6 +15,7 @@ const userCardStyle = {
         flexDirection: "column",
         justifyContent: "space-between",
         alignItems: "center",
+        alignSelf: "center",
 
         "& img": {
             display: "block",
@@ -21,14 +24,11 @@ const userCardStyle = {
         }
     },
 
-    name: {
-        textAlign: "center",
-    },
-
     ...imagesStyle,
     imgBody: {
         display: "block"
     },
+
 };
 
 export default userCardStyle;

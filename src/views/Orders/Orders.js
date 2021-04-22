@@ -7,7 +7,7 @@ import Header from "../../components/Header/Header";
 import HeaderLinksProfile from "../../components/Header/HeaderLinksProfile";
 import classNames from "classnames";
 import Footer from "../../components/Footer/Footer";
-import LatestProducts from "../../components/LatestProducts/LatestProducts";
+import Executors from "../../components/Executors/Executors";
 
 const dashboardRoutes = [];
 const useStyles = makeStyles(styles);
@@ -27,7 +27,8 @@ export default function Orders(props) {
                 {...rest}/>
 
             <div className={classNames(classes.main)}>
-                <LatestProducts/>
+                {/*TODO: В зависимости от ролли будут разные списки*/}
+                <Executors/>
             </div>
             <Footer/>
         </div>

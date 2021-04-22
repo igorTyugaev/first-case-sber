@@ -16,6 +16,7 @@ import Login from "./views/Login/Login";
 import EditProfile from "./views/EditProfile/EditProfile";
 import Orders from "./views/Orders/Orders";
 import ProfilePageCustomer from './views/ProfilePage/ProfilePageCustomer';
+import AddOrder from "./views/AddOrder/AddOrder";
 
 var hist = createBrowserHistory();
 
@@ -32,6 +33,7 @@ ReactDOM.render(
             <Route path="/landing-page" component={LandingPage}/>
             <Route path="/profile-student" component={ProfilePageStudent}/>
             <Route path="/profile-customer" component={ProfilePageCustomer}/>
+            <Route path="/add-order" component={AddOrder}/>
             <Route path="/" component={LandingPage} exact/>
         </Switch>
     </Router>,
