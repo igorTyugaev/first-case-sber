@@ -136,7 +136,7 @@ export default function AddOrder(props) {
 
                             </CardBody>
                             <CardFooter>
-                                <Button color="success">Обновить профиль</Button>
+                                <Button color="success">Создать заказ</Button>
                             </CardFooter>
                         </form>
                     </Card>

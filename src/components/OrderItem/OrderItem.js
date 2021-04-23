@@ -7,26 +7,23 @@ import ProfileAboutOrder from "../ProfileAboutOrder/ProfileAboutOrder";
 import Button from "../CustomButtons/Button";
 import {ListItem} from "@material-ui/core";
 import classNames from "classnames";
-import OfferActions from "../OfferActions/OfferActions";
+import OrderActions from "../OrderActions/OrderActions";
 
 const dashboardRoutes = [];
 const useStyles = makeStyles(styles);
 
 
-export default function ExecutorItem(props) {
+export default function OrderItem(props) {
     const classes = useStyles();
-    const {product} = props;
-    console.log(product);
+    const {...rest} = props;
 
     return (
         <div className={classNames(classes.main)}>
 
-            <CardProfileOrder/>
+            <ProfileAboutOrder/>
 
-            <ProfileAboutOrder product={product}/>
+            <OrderActions/>
 
-            <OfferActions/>
         </div>
     );
 }
-

@@ -8,7 +8,7 @@ import styles from "assets/jss/material-kit-react/components/userCard.js";
 import classNames from "classnames";
 import Button from "../CustomButtons/Button";
 
-import profile from "../../assets/img/faces/christian.jpg";
+import profile from "../../assets/img/faces/marc.jpg";
 import Badge from "../Badge/Badge";
 import Rating from "@material-ui/lab/Rating";
 import GridItem from "../Grid/GridItem";
@@ -16,7 +16,7 @@ import Typography from "@material-ui/core/Typography";
 
 const useStyles = makeStyles(styles);
 
-export default function CardProfileOrder(props) {
+export default function CardProfileStudent(props) {
     const classes = useStyles();
     const {...rest} = props;
     const imageClasses = classNames(
@@ -31,7 +31,7 @@ export default function CardProfileOrder(props) {
         <div className={classNames(classes.body)}>
             <div className={classNames(classes.profile)}>
                 <Button color="primary" size="lg" link className={classNames(classes.btn)}>
-                    Пупкин Иван
+                    Ученик
                 </Button>
                 
                 <img src={profile} alt="..." className={imageClasses}/>
@@ -41,7 +41,7 @@ export default function CardProfileOrder(props) {
                 </div>
 
                 <Typography variant="body2" color="textSecondary" component="p">
-                    Выполненых работ: 200
+                    Выполненых работ: 0
                 </Typography>
 
                 <Rating name="read-only" value={value} readOnly style={{padding: "5px"}}/>
@@ -51,4 +51,4 @@ export default function CardProfileOrder(props) {
     );
 }
 
-CardProfileOrder.propTypes = {};
+CardProfileStudent.propTypes = {};

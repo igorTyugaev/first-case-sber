@@ -38,7 +38,27 @@ export default function HeaderLinksProfile(props) {
                     onClick={e => e.preventDefault()}
                     color="transparent"
                 >
-                    Ваш заказ
+                    Мои заказы
+                </Button>
+            </ListItem>
+            <ListItem className={classes.listItem}>
+                <Button
+                    href="#pablo"
+                    className={classes.navLink}
+                    onClick={e => e.preventDefault()}
+                    color="transparent"
+                >
+                    Студенты
+                </Button>
+            </ListItem>
+            <ListItem className={classes.listItem}>
+                <Button
+                    href="#pablo"
+                    className={classes.navLink}
+                    onClick={e => e.preventDefault()}
+                    color="transparent"
+                >
+                    Мои материалы
                 </Button>
             </ListItem>
             <ListItem className={classes.listItem}>
