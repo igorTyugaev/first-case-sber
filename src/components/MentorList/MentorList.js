@@ -22,7 +22,7 @@ import profile from "../../assets/img/faces/christian.jpg";
 import Button from "../CustomButtons/Button";
 import CardProfileOrder from "../CardProfileOrder/CardProfileOrder";
 import ProfileAboutOrder from "../ProfileAboutOrder/ProfileAboutOrder";
-import ExecutorItem from "../ExecutorItem/ExecutorItem";
+import MentorItem from "../MentorItem/MentorItem";
 
 const products = [
     {
@@ -65,7 +65,7 @@ const dashboardRoutes = [];
 const useStyles = makeStyles(styles);
 
 
-export default function Executors(props) {
+export default function ExecutorList(props) {
     const classes = useStyles();
     const {...rest} = props;
 
@@ -73,9 +73,9 @@ export default function Executors(props) {
         <GridItem xs={12} sm={12} md={10} lg={8} className={classNames(classes.inner)}>
             <Card>
                 <CardHeader color="success">
-                    <h4 className={classes.cardTitleWhite}>Наставники, готовые выполнить ваш заказ</h4>
+                    <h4 className={classes.cardTitleWhite}>Выберите наставника</h4>
                     <p className={classes.cardCategoryWhite}>
-                        Выберите подходящего для вас наставника и нажмите "ОТКЛИКНУТЬСЯ"
+                        Выберите подходящего для вас наставника и нажмите "ПРИНЯТЬ"
                     </p>
                 </CardHeader>
                 <List>
@@ -83,7 +83,7 @@ export default function Executors(props) {
                         <ListItem
                             divider={i < products.length - 1}
                             key={product.id}>
-                            <ExecutorItem/>
+                            <MentorItem/>
                         </ListItem>
                     ))}
                 </List>

@@ -7,12 +7,12 @@ import Header from "../../components/Header/Header";
 import HeaderLinksProfile from "../../components/Header/HeaderLinksProfile";
 import classNames from "classnames";
 import Footer from "../../components/Footer/Footer";
-import MyOrders from "../../components/MyOrders/MyOrders";
+import MentorList from "../../components/MentorList/MentorList";
 
 const dashboardRoutes = [];
 const useStyles = makeStyles(styles);
 
-export default function Orders(props) {
+export default function Mentors(props) {
     const classes = useStyles();
     const {...rest} = props;
 
@@ -28,7 +28,7 @@ export default function Orders(props) {
 
             <div className={classNames(classes.main)}>
                 {/*TODO: В зависимости от ролли будут разные списки*/}
-                <MyOrders/>
+                <MentorList/>
             </div>
             <Footer/>
         </div>

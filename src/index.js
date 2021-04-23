@@ -17,6 +17,9 @@ import EditProfile from "./views/EditProfile/EditProfile";
 import Orders from "./views/Orders/Orders";
 import ProfilePageCustomer from './views/ProfilePage/ProfilePageCustomer';
 import AddOrder from "./views/AddOrder/AddOrder";
+import Executors from "./views/Executor/Executor";
+import Students from "./views/Students/Students";
+import Mentors from "./views/Mentors/Mentors";
 
 var hist = createBrowserHistory();
 
@@ -24,15 +27,21 @@ ReactDOM.render(
     <Router history={hist}>
         <Switch>
             <Route path="/components" component={Components}/>
-            <Route path="/profile" component={ProfilePage}/>
-            <Route path="/orders" component={Orders}/>
-            <Route path="/edit-profile" component={EditProfile}/>
             <Route path="/login-page" component={LoginPage}/>
+
+            <Route path="/profile" component={ProfilePage}/>
+            <Route path="/profile-customer" component={ProfilePageCustomer}/>
+            <Route path="/profile-student" component={ProfilePageStudent}/>
+            <Route path="/edit-profile" component={EditProfile}/>
+            
             <Route path="/register" component={Register}/>
             <Route path="/login" component={Login}/>
             <Route path="/landing-page" component={LandingPage}/>
-            <Route path="/profile-student" component={ProfilePageStudent}/>
-            <Route path="/profile-customer" component={ProfilePageCustomer}/>
+            
+            <Route path="/orders" component={Orders}/>
+            <Route path="/mentors" component={Mentors}/>
+            <Route path="/students" component={Students}/>
+            <Route path="/executors" component={Executors}/>
             <Route path="/add-order" component={AddOrder}/>
             <Route path="/" component={LandingPage} exact/>
         </Switch>
