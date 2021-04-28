@@ -7,7 +7,7 @@ import Header from "../../components/Header/Header";
 import HeaderLinksProfile from "../../components/Header/HeaderLinksProfile";
 import classNames from "classnames";
 import Footer from "../../components/Footer/Footer";
-import ExecutorList from "../../components/ExecutorList/ExecutorList";
+import MentorForCustomerList from "../../components/ExecutorList/MentorForCustomerList";
 
 const dashboardRoutes = [];
 const useStyles = makeStyles(styles);
@@ -28,7 +28,7 @@ export default function Executor(props) {
 
             <div className={classNames(classes.main)}>
                 {/*TODO: В зависимости от ролли будут разные списки*/}
-                <ExecutorList/>
+                <MentorForCustomerList/>
             </div>
             <Footer/>
         </div>

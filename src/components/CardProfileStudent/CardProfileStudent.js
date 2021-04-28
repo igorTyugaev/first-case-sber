@@ -30,10 +30,6 @@ export default function CardProfileStudent(props) {
     return (
         <div className={classNames(classes.body)}>
             <div className={classNames(classes.profile)}>
-                <Button color="primary" size="lg" link className={classNames(classes.btn)}>
-                    Ученик
-                </Button>
-                
                 <img src={profile} alt="..." className={imageClasses}/>
 
                 <div style={{padding: "5px"}}>
@@ -45,7 +41,6 @@ export default function CardProfileStudent(props) {
                 </Typography>
 
                 <Rating name="read-only" value={value} readOnly style={{padding: "5px"}}/>
-
             </div>
         </div>
     );

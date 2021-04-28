@@ -13,11 +13,22 @@ const useStyles = makeStyles(styles);
 
 export default function OfferActions(props) {
     const classes = useStyles();
-    const {...rest} = props;
+    const {products} = props;
 
     return (
         <div className={classNames(classes.main)}>
-            <Button color="success" className={classNames(classes.btn)}>Принять</Button>
+            <Typography variant="subtitle1" color="textPrimary" component="p">
+                Сделаю за: <br/>
+                <span style={{fontWeight: "bold", color: "#000", textAlign: "center"}}>
+                    {200}{"₽"}
+                </span>
+            </Typography>
+            <Typography variant="subtitle1" color="textPrimary" component="p">
+                Срок исполнения: <br/> <span
+                style={{fontWeight: "bold", color: "#000", textAlign: "center"}}>{"30.12.21"}</span>
+            </Typography>
+
+            <Button color="success" className={classNames(classes.btn)}>Откликнуться</Button>
             <Button color="danger" className={classNames(classes.btn)}>Отклонить</Button>
         </div>
     );

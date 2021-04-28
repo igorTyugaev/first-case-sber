@@ -20,7 +20,7 @@ import UserAboutBody from "../../components/UserAboutBody/UserAboutBody";
 const dashboardRoutes = [];
 const useStyles = makeStyles(styles);
 
-export default function ProfilePage(props) {
+export default function ProfilePageMentor(props) {
     const classes = useStyles();
     const {...rest} = props;
 

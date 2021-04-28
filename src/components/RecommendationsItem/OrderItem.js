@@ -1,9 +1,8 @@
 import React from "react";
 // @material-ui/core components
 import {makeStyles} from "@material-ui/core/styles";
-import styles from "assets/jss/material-kit-react/components/executorItem.js";
-import CardProfileOrder from "../CardProfileOrder/CardProfileOrder";
-import ProfileAboutOrder from "../ProfileAboutOrder/ProfileAboutOrder";
+import styles from "assets/jss/material-kit-react/components/orderItem.js";
+import ProfileAboutItem from "../ProfileAboutItem/ProfileAboutItem";
 import Button from "../CustomButtons/Button";
 import {ListItem} from "@material-ui/core";
 import classNames from "classnames";
@@ -15,15 +14,18 @@ const useStyles = makeStyles(styles);
 
 export default function OrderItem(props) {
     const classes = useStyles();
-    const {...rest} = props;
+    const {product} = props;
 
     return (
         <div className={classNames(classes.main)}>
 
-            <ProfileAboutOrder/>
+            <div className={classNames(classes.col_1)}>
+                <ProfileAboutItem product={product}/>
+            </div>
 
-            <OrderActions/>
-
+            <div className={classNames(classes.col_2)}>
+                <OrderActions products={product}/>
+            </div>
         </div>
     );
 }

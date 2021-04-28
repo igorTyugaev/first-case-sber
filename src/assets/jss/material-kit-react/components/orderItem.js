@@ -2,7 +2,7 @@ import {container, title} from "assets/jss/material-kit-react.js";
 
 import imagesStyle from "assets/jss/material-kit-react/imagesStyles.js";
 
-const executorItemStyle = {
+const orderItemStyle = {
     main: {
         width: "100%",
         display: "flex",
@@ -14,6 +14,19 @@ const executorItemStyle = {
             display: "flex",
             flexDirection: "column",
         },
+    },
+
+    col_1: {
+        display: "flex",
+        flexDirection: "row",
+        justifyContent: "space-between",
+        flex: "2.5",
+        width: "100%",
+    },
+
+    col_2: {
+        flex: "1",
+        width: "100%",
     },
 
 
@@ -59,4 +72,4 @@ const executorItemStyle = {
     },
 };
 
-export default executorItemStyle;
+export default orderItemStyle;

@@ -17,8 +17,6 @@ export default function OfferActions(props) {
 
     return (
         <div className={classNames(classes.main)}>
-
-
             <Typography variant="subtitle1" color="textPrimary" component="p">
                 Сделаю за: <br/>
                 <span style={{fontWeight: "bold", color: "#000", textAlign: "center"}}>
@@ -33,7 +31,6 @@ export default function OfferActions(props) {
             <Button color="success" className={classNames(classes.btn)}>Откликнуться</Button>
             <Button color="danger" className={classNames(classes.btn)}>Отклонить</Button>
         </div>
-
     );
 }
 
