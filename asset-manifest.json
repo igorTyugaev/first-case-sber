@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/first-case-sber/static/css/main.7e0196b4.chunk.css",
+    "main.js": "/first-case-sber/static/js/main.bc6d0efb.chunk.js",
+    "main.js.map": "/first-case-sber/static/js/main.bc6d0efb.chunk.js.map",
+    "runtime-main.js": "/first-case-sber/static/js/runtime-main.e352d1ed.js",
+    "runtime-main.js.map": "/first-case-sber/static/js/runtime-main.e352d1ed.js.map",
+    "static/js/2.b18de375.chunk.js": "/first-case-sber/static/js/2.b18de375.chunk.js",
+    "static/js/2.b18de375.chunk.js.map": "/first-case-sber/static/js/2.b18de375.chunk.js.map",
+    "index.html": "/first-case-sber/index.html",
+    "static/css/main.7e0196b4.chunk.css.map": "/first-case-sber/static/css/main.7e0196b4.chunk.css.map",
+    "static/js/2.b18de375.chunk.js.LICENSE.txt": "/first-case-sber/static/js/2.b18de375.chunk.js.LICENSE.txt",
+    "static/media/avatar.37d93aaa.jpg": "/first-case-sber/static/media/avatar.37d93aaa.jpg",
+    "static/media/bg.527ceab2.jpg": "/first-case-sber/static/media/bg.527ceab2.jpg",
+    "static/media/bg2.adb0a4f1.jpg": "/first-case-sber/static/media/bg2.adb0a4f1.jpg",
+    "static/media/bg3.6584b707.jpg": "/first-case-sber/static/media/bg3.6584b707.jpg",
+    "static/media/bg4.jpg": "/first-case-sber/static/media/bg4.88963029.jpg",
+    "static/media/card-profile1-square.69992197.jpg": "/first-case-sber/static/media/card-profile1-square.69992197.jpg",
+    "static/media/christian.36a49d2f.jpg": "/first-case-sber/static/media/christian.36a49d2f.jpg",
+    "static/media/ind.jpg": "/first-case-sber/static/media/ind.45dae4c7.jpg",
+    "static/media/kendall.ab8e0d7e.jpg": "/first-case-sber/static/media/kendall.ab8e0d7e.jpg",
+    "static/media/landing.833419cc.jpg": "/first-case-sber/static/media/landing.833419cc.jpg",
+    "static/media/marc.8e7add50.jpg": "/first-case-sber/static/media/marc.8e7add50.jpg",
+    "static/media/profile.298cea56.jpg": "/first-case-sber/static/media/profile.298cea56.jpg",
+    "static/media/sign.6177df0e.jpg": "/first-case-sber/static/media/sign.6177df0e.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e352d1ed.js",
+    "static/js/2.b18de375.chunk.js",
+    "static/css/main.7e0196b4.chunk.css",
+    "static/js/main.bc6d0efb.chunk.js"
+  ]
+}
